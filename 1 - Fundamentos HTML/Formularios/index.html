@@ -1,14 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <!-- Input do tipo SELECT-->
-     <label for="situa">Situação Atual</label>
-    <select name="situacao" id="situa"></select>
 
-</b ody>
+<body>
+    <h1>Inputs HTML</h1>
+    <form action="">
+        <!--Input tipo Texto-->
+        <Label for="nome">Nome:</Label>
+        <input type="text" name="nome" id="nome" required placeholder="Rock">
+        <br>
+        <br>
+        <!--Input tipo email-->
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <br>
+        <!--Input tipo senha-->
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" required>
+        <br>
+        <br>
+        <!--Input tipo Radio-->
+        <label for="genero">Gênero:</label>
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="genero" id="masculino" value="M">
+        <label for="feminino">/ Feminino</label>
+        <input type="radio" name="genero" id="feminino" value="f">
+        <br>
+        <br>
+        <label>Interesses:</label>
+        <label for="backend">BackEnd</label>
+        <input type="checkbox" name="Interesses" id="backend" value="BackEnd">
+        <label for="backend">FrontEnd</label>
+        <input type="checkbox" name="Interesses" id="FrontEnd" value="FrontEnd">
+        <label for="backend">Mobile</label>
+        <input type="checkbox" name="Interesses" id="Mobile" value="Mobile">
+        <br>
+        <br>
+        <label for="data">Data de Nascimento</label>
+        <input type="date" id="data">
+        <br><br>
+        <label for="situacao">Situação Atual</label>
+        <select name="situacao" id="situa">
+            <option value="estudante">Estudando para me tornar programador</option>
+            <option value="estagiário">Atuando como estagiário</option>
+            <option value="junior">Atuando como desenvolvedor Junior</option>
+            <option value="pleno">Atuando como desenvolvedor Pleno</option>
+            <option value="senior">Atuando como desenvolvedor Sênior</option>
+            <option value="lead">Tech Lead</option>
+        </select>
+        <br>
+        <br>
+        <label for="sobremim">Sobre mim</label>
+        <br>
+        <textarea name="sobre" id="sobremim" cols="40" rows="10" placeholder="Fale sobre você"></textarea>
+        <br>
+        <br>
+        <button type="submit">Enviar</button>
+        <form action="">
+</body>
+
 </html>
